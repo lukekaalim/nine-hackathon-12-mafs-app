@@ -35,7 +35,7 @@ const Question = ({
     className={cx({
       answered,
       active,
-    }, 'root')}
+    }, 'quizRoot')}
   >
     <div className="questionTagLineContainer">
       <h3 className="questionTagline">Find your Lover ...</h3>

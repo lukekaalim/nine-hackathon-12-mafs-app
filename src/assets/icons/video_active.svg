@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>VideoHover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Her-Profile" transform="translate(-171.000000, -31.000000)" fill="#ED3F45">
+            <path d="M181.371951,38.5121951 C181.63522,38.5060488 181.907024,38.5709268 182.172341,38.7150244 L190.708927,43.6556585 C191.173317,43.9254146 191.487805,44.4205366 191.487805,45 C191.487805,45.579122 191.173317,46.0745854 190.708927,46.3443415 L182.172341,51.2849756 C181.111415,51.8603415 179.905024,51.1272195 179.878049,49.919122 L179.878049,40.0699512 C179.898195,39.1640488 180.582488,38.5299512 181.371951,38.5121951 M185,31 C177.267902,31 171,37.2679024 171,45 C171,52.7320976 177.267902,59 185,59 C192.732098,59 199,52.7320976 199,45 C199,37.2679024 192.732098,31 185,31" id="VideoHover"></path>
+        </g>
+    </g>
+</svg>

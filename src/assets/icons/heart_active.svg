@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="27px" viewBox="0 0 30 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>HeartHover</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="29.7640432 0.0147542195 29.7640432 26.1218878 0.129084158 26.1218878 0.129084158 0.0147542195 29.7640432 0.0147542195"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Her-Profile" transform="translate(-105.000000, -32.000000)">
+            <g id="HeartHover" transform="translate(105.000000, 32.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-4"></g>
+                <path d="M8.24349789,0.0147542195 C3.40879453,0.0147542195 0.129084158,3.89521571 0.129084158,8.8345214 C0.129084158,17.3016118 6.47930024,20.8300071 14.9463907,26.1219895 C23.4138882,20.8300071 29.7641043,17.3016118 29.7641043,8.8345214 C29.7641043,3.89521571 26.4843939,0.0147542195 21.6496905,0.0147542195 C18.5380765,0.0147542195 15.9804071,1.77874836 14.9463907,2.83718554 C13.9127813,1.77874836 11.3551119,0.0147542195 8.24349789,0.0147542195 L8.24349789,8.8345214" id="Fill-3" fill="#ED3F45" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

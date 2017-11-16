@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="28px" viewBox="0 0 27 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Chat</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 27.6585366 0 0 27 0 27 27.6585366"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile" transform="translate(-236.000000, -31.000000)">
+            <g id="Chat" transform="translate(236.000000, 31.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M13.5,0 C6.05832321,0 0,4.70184807 0,10.487887 C0,14.8523083 3.45838396,18.7354817 8.65826245,20.2785176 C8.56175577,21.8901451 8.10956865,23.4586263 7.33505468,24.8700105 C6.70078979,26.026112 6.56136087,26.7009655 6.84295261,27.187745 C7.02339004,27.4905993 7.35200486,27.6703759 7.70139733,27.6579298 C8.19896719,27.6579298 9.52217497,27.6410585 17.9097813,20.4032548 C23.3420413,18.9456819 27,14.9823006 27,10.4934186 C27,4.70184807 20.9416768,0 13.5,0" id="Fill-1" fill="#AAAAAA" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

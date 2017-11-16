@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="30px" viewBox="0 0 24 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ProfileHover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Her-Profile" transform="translate(-43.000000, -30.000000)" fill="#ED3F45">
+            <g id="ProfileHover" transform="translate(43.000000, 30.000000)">
+                <path d="M17.6790781,16.4865801 C19.5062013,17.842062 24.3653517,21.7734048 24,25 C23.5507797,28.9672786 16.3384666,30 13,30 C9.82499924,30 4.20220585e-16,29 0,25 C0,21.918837 4.15343499,18.2443261 6.06159977,16.7187695 C4.18758332,14.9764002 3,12.3887751 3,9.5 C3,4.25329488 6.91750844,-3.55271368e-15 11.75,-3.55271368e-15 C16.5824916,-3.55271368e-15 20.5,4.25329488 20.5,9.5 C20.5,12.2630833 19.4135129,14.7506528 17.6790781,16.4865801 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

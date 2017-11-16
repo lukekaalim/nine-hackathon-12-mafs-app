@@ -1,0 +1,40 @@
+.greyCurvedLayoutRoot {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.greyCurvedLayoutHeader {
+  flex: 0 0 80px;
+  width: 100%;
+}
+
+.greyCurvedLayoutPrimaryContent {
+  flex: 1 1;
+  padding-bottom: 10px;
+}
+
+.greyCurvedLayoutSecondaryContent {
+  box-sizing: border-box;
+  background-color: #EFF3F7;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  flex: 0 0 200px;
+}
+
+.questionCurve {
+  background-image: url('../../assets/curve.svg');
+  background-position: bottom;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  flex: 0 0 20px;
+}

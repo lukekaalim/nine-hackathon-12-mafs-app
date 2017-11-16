@@ -1,0 +1,14 @@
+.profileImageContainer {
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+}
+
+.profileImage {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+}

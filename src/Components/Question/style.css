@@ -1,4 +1,4 @@
-.root {
+.quizRoot {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -10,11 +10,11 @@
   flex-direction: column;
 }
 
-.active {
+.quizRoot.active {
   transform: translateX(0%);
 }
 
-.answered {
+.quizRoot.answered {
   transform: translateX(-100%);
 }
 
@@ -80,7 +80,7 @@
   border: 0;
 }
 
-.questionCurve {
+.greyCurve {
   background-image: url('../../assets/curve.svg');
   background-position: bottom;
   background-size: 100% 100%;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
-import { setView } from '../actions/view';
-import Question from '../components/Question';
+import { setView } from '../../actions/view';
+import Question from '../../components/Question';
 
 const mapDispachToProps = (dispatch) => ({
   goHome: () => dispatch(setView('home')),
@@ -11,7 +11,7 @@ const mapDispachToProps = (dispatch) => ({
 const mapStateToProps = (state) => ({
   answers: state.quiz.answers,
   questions: state.quiz.questions,
-  answersSoFar: Object.keys(state.quiz.answers).length,
+  answersSoFar: state.quiz.answersSoFar,
 });
 
 const Quiz = ({ answers, answersSoFar, goHome, questions }) => (
@@ -24,6 +24,7 @@ const Quiz = ({ answers, answersSoFar, goHome, questions }) => (
         icon={icon}
         answers={answers}
         active={index === answersSoFar}
+        onAnswer={() => (index === questions.length - 1) && goHome()}
       />)
     }
   </div>
