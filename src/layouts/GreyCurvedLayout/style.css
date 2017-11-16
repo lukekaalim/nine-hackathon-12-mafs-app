@@ -18,6 +18,7 @@
 .greyCurvedLayoutPrimaryContent {
   flex: 1 1;
   padding-bottom: 10px;
+  position: relative;
 }
 
 .greyCurvedLayoutSecondaryContent {
@@ -28,13 +29,15 @@
   align-items: center;
   justify-content: stretch;
   flex: 0 0 200px;
+  position: relative;
 }
 
-.questionCurve {
-  background-image: url('../../assets/curve.svg');
+.greyCurve {
+  background-image: url('../../assets/curve.png');
   background-position: bottom;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  position: relative;
   width: 100%;
   flex: 0 0 20px;
 }

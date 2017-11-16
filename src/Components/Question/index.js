@@ -41,7 +41,7 @@ const Question = ({
       <h3 className="questionTagline">Find your Lover ...</h3>
     </div>
     {icon && <img src={icon} alt={iconAlt || prompt} className="questionIcon" />}
-    <div className="questionCurve"/>
+    <div className="greyCurve"/>
     <div className="questionAnswerArea">
       <h4 className="questionPrompt">{prompt} {answered && '✓'}</h4>
       <div className="questionAnswerList">

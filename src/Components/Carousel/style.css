@@ -1,0 +1,12 @@
+.carouselRoot {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.carouselSlide {
+  display: block;
+  height: 100%;
+  width: 100%;
+}

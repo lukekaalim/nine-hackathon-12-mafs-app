@@ -28,19 +28,23 @@ const mapDispachToProps = (dispatch) => ({
   goToChat: () => dispatch(setView('chat')),
 });
 
+const buildNavIconSrc = (viewName, currentView, activeImg, inactiveImg) => (
+  viewName.indexOf(currentView) > -1 ? activeImg : inactiveImg
+);
+
 const MenuBar = ({ currentView, goToProfile, goToHeart, goToVideo, goToChat }) => (
   <nav className='menuBarRoot'>
     <button className='menuBarButton' onClick={goToProfile}>
-      <img src={currentView === 'yourprofile' ? profileActiveImg : profileImg} alt="profile" />
+      <img src={buildNavIconSrc(['yourprofile', 'committment'], currentView, profileActiveImg, profileImg)} alt="profile" />
     </button>
     <button className='menuBarButton' onClick={goToHeart}>
-      <img src={currentView === 'heart' ? heartActiveImg : heartImg} alt="heart" />
+      <img src={buildNavIconSrc(['heart'], currentView, heartActiveImg, heartImg)} alt="heart" />
     </button>
     <button className='menuBarButton' onClick={goToVideo}>
-      <img src={currentView === 'video' ? videoActiveImg : videoImg} alt="video" />
+      <img src={buildNavIconSrc(['video'], currentView, videoActiveImg, videoImg)} alt="video" />
     </button>
     <button className='menuBarButton' onClick={goToChat}>
-      <img src={currentView === 'chat' ? chatActiveImg : chatImg} alt="chat" />
+      <img src={buildNavIconSrc(['chat'], currentView, chatActiveImg, chatImg)} alt="chat" />
     </button>
   </nav>
 );

@@ -1,0 +1,25 @@
+.matchableProfileImage {
+  width: 100%;
+  height: auto;
+  transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+}
+
+.heartCarousel {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.heartControls {
+  flex: 0 0 170px;
+}
+
+.heartRoot {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

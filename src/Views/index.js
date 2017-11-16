@@ -6,7 +6,9 @@ import Heart from './Heart';
 import Video from './Video';
 import Chat from './Chat';
 import Unknown from './Unknown';
+import Login from './Login';
 import Quiz from './Quiz';
+import Committment from './Committment';
 import YourProfile from './YourProfile';
 
 const mapStateToProps = (state) => ({
@@ -21,8 +23,12 @@ const Views = ({ currentView }) => {
       return <Home />;
     case 'yourprofile':
       return <YourProfile />;
+    case 'committment':
+      return <Committment />;
     case 'heart':
       return <Heart />;
+    case 'login':
+      return <Login />;
     case 'video':
       return <Video />;
     case 'chat':

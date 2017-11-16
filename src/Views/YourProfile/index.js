@@ -30,7 +30,7 @@ const YourProfile = ({ yourProfile, goToQuiz }) => (
         primaryContent={
           <div className="yourProfilePrimary">
             <div className="yourProfileImageContainer">
-              <img className="yourProfileImage" src={yourProfile.image} alt="tjing" />
+              <img className="yourProfileImage" src={yourProfile.image} alt="" />
             </div>
             <h1 className="yourProfileName">
               {`${yourProfile.firstName}, ${yourProfile.age}`}

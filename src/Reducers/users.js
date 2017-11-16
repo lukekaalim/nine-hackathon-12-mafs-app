@@ -1,10 +1,12 @@
 import kunnalImg from '../assets/users/kunaal.jpg';
-
-console.log(kunnalImg);
+import michelleImg from '../assets/users/michelle.jpg';
 
 const initalState = {
   myId: 0,
-  matchedId: 1,
+  matchableUsers: [
+    1,
+    1,
+  ],
   allUsers: {
     0: {
       image: kunnalImg,
@@ -15,8 +17,8 @@ const initalState = {
       bio: '"I will make your proud." - note to self',
     },
     1: {
-      image: kunnalImg,
-      firstName: 'Michelle',
+      image: michelleImg,
+      firstName: 'michelle',
       distance: 0,
       lastName: '',
       age: '21',

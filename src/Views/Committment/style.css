@@ -1,0 +1,47 @@
+.committmentImageContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.committmentImageContainer.right {
+  right: 50%;
+  transform: translateX(15%);
+}
+
+.committmentImageContainer.left {
+  left: 50%;
+  transform: translateX(-15%);
+}
+
+.committmentImage {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.committmentDoubleImageContainer {
+  position: relative;
+  flex: 1;
+  width: 100%;
+}
+
+.committmentTitle {
+  flex: 0 0 17px;
+  font-size: 17px;
+}
+
+.committmentRoot {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
