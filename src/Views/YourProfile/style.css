@@ -1,8 +1,8 @@
 .yourProfileImageContainer {
   display: block;
   width: auto;
-  position: relative;
   flex: 1 1;
+  position: relative;
 }
 
 .yourProfileImage {

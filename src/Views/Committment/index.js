@@ -32,7 +32,7 @@ const Committment = ({ yourProfile, matchableUsers}) => (
           </div>
         }
         secondaryContent={
-          <div className=""committmentSecondaryRoot>
+          <div className="committmentSecondaryRoot">
             <Button>Start Talking</Button>
             <button>Or keep Searching</button>
           </div>

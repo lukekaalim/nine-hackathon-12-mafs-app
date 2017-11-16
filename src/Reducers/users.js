@@ -1,7 +1,10 @@
 import kunnalImg from '../assets/users/kunaal.jpg';
 import michelleImg from '../assets/users/michelle.jpg';
 
+import { LOG_USER_IN } from '../actions/users';
+
 const initalState = {
+  isLoggedIn: false,
   myId: 0,
   matchableUsers: [
     1,
@@ -32,6 +35,23 @@ const initalState = {
 
 const reduceUsers = (state = initalState, action) => {
   switch (action.type) {
+    case LOG_USER_IN:
+      return {
+        ...state,
+        isLoggedIn: true,
+        myId: action.userId,
+        allUsers: {
+          ...state.allUsers,
+          [action.userId]: {
+            image: action.image,
+            firstName: action.firstName,
+            lastName: action.lastName,
+            distance: 0,
+            age: action.age,
+            bio: 'bio placeholder....',
+          }
+        }
+      }
     default:
       return state;
   }

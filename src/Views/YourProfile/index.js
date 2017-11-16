@@ -5,6 +5,7 @@ import { setView } from '../../actions/view';
 import { resetAnswers } from '../../actions/quiz';
 import MenuBar from '../../components/MenuBar';
 import Button from '../../components/Button/StandardRed';
+import UploadablePhoto from '../../components/UploadablePhoto';
 import GreyCurvedLayout from '../../layouts/GreyCurvedLayout';
 import HeadedLayout from '../../layouts/HeadedLayout';
 
@@ -30,7 +31,14 @@ const YourProfile = ({ yourProfile, goToQuiz }) => (
         primaryContent={
           <div className="yourProfilePrimary">
             <div className="yourProfileImageContainer">
-              <img className="yourProfileImage" src={yourProfile.image} alt="" />
+              <UploadablePhoto
+                initalImage={yourProfile.image}
+                photoProps={{
+                  className:'yourProfileImage',
+                  alt:'alternative',
+                }}
+                renderWithPhoto={photo => photo}
+              />
             </div>
             <h1 className="yourProfileName">
               {`${yourProfile.firstName}, ${yourProfile.age}`}
