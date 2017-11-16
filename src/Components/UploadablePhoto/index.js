@@ -55,8 +55,8 @@ class UploadablePhoto extends Component {
     return (
       <div onClick={() => streaming && this.stopEditing()} className="uploadablePhotoRoot">
         <canvas width='500' height='500' className="uploadablePhotoHiddenCanvas" ref={(canvas) => { this.canvas = canvas }}/>
-        <div onClick={() => this.startEditing()} className="uploadablePhotoIcon" />
         {photo}
+        <div onClick={() => this.startEditing()} className="uploadablePhotoIcon" />
       </div>
     );
   }

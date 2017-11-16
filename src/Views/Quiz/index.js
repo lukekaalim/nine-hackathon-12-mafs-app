@@ -5,7 +5,7 @@ import { setView } from '../../actions/view';
 import Question from '../../components/Question';
 
 const mapDispachToProps = (dispatch) => ({
-  goHome: () => dispatch(setView('home')),
+  goToHeart: () => dispatch(setView('heart')),
 });
 
 const mapStateToProps = (state) => ({
@@ -14,7 +14,7 @@ const mapStateToProps = (state) => ({
   answersSoFar: state.quiz.answersSoFar,
 });
 
-const Quiz = ({ answers, answersSoFar, goHome, questions }) => (
+const Quiz = ({ answers, answersSoFar, goToHeart, questions }) => (
   <div>
     {questions.map(({ id, prompt, icon, answers}, index) =>
       <Question
@@ -24,7 +24,7 @@ const Quiz = ({ answers, answersSoFar, goHome, questions }) => (
         icon={icon}
         answers={answers}
         active={index === answersSoFar}
-        onAnswer={() => (index === questions.length - 1) && goHome()}
+        onAnswer={() => (index === questions.length - 1) && goToHeart()}
       />)
     }
   </div>
