@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 
 import { setView } from '../../actions/view';
 import { resetAnswers } from '../../actions/quiz';
+import { updateUser } from '../../actions/users';
 import MenuBar from '../../components/MenuBar';
 import Button from '../../components/Button/StandardRed';
 import UploadablePhoto from '../../components/UploadablePhoto';
@@ -13,16 +14,18 @@ import './style.css';
 
 const mapStateToProps = (state) => ({
   yourProfile: state.users.allUsers[state.users.myId],
+  yourId: state.users.myId,
 });
 
-const mapDispachToProps = (dispatch) => ({
+const mapDispachToProps = (dispatch, state) => ({
   goToQuiz: () => {
     dispatch(resetAnswers());
     dispatch(setView('quiz'));
   },
+  updatePhoto: (newImage, userId) => dispatch(updateUser(userId, { image: newImage })),
 });
 
-const YourProfile = ({ yourProfile, goToQuiz }) => (
+const YourProfile = ({ yourProfile, goToQuiz, updatePhoto, yourId }) => (
   <div className="profileRoot">
     <HeadedLayout
       header={<MenuBar />}
@@ -37,7 +40,7 @@ const YourProfile = ({ yourProfile, goToQuiz }) => (
                   className:'yourProfileImage',
                   alt:'alternative',
                 }}
-                renderWithPhoto={photo => photo}
+                onNewPhoto={(photo) => updatePhoto(photo, yourId)}
               />
             </div>
             <h1 className="yourProfileName">

@@ -24,12 +24,14 @@ class UploadablePhoto extends Component {
   stopEditing() {
     const context = this.canvas.getContext('2d');
     context.drawImage(this.video, 0, 0, 500, 500);
+    const newImage = this.canvas.toDataURL('image/png');
 
     this.setState({
       streamSource: null,
       streaming: false,
-      newImage: this.canvas.toDataURL('image/png'),
+      newImage,
     });
+    this.props.onNewPhoto(newImage);
   }
 
   constructor(props) {
@@ -42,11 +44,11 @@ class UploadablePhoto extends Component {
   }
 
   render() {
-    const { renderWithPhoto, photoProps, initalImage } = this.props;
+    const { photoProps, initalImage } = this.props;
     const { streaming, newImage } = this.state;
 
     const photo = streaming ?
-      <video height='250' {...photoProps} ref={(video) => { this.video = video }} />
+      <video width='250' {...photoProps} ref={(video) => { this.video = video }} />
       :
       <img alt={''} {...photoProps} src={newImage || initalImage} />;
 
@@ -54,7 +56,7 @@ class UploadablePhoto extends Component {
       <div onClick={() => streaming && this.stopEditing()} className="uploadablePhotoRoot">
         <canvas width='500' height='500' className="uploadablePhotoHiddenCanvas" ref={(canvas) => { this.canvas = canvas }}/>
         <div onClick={() => this.startEditing()} className="uploadablePhotoIcon" />
-        {renderWithPhoto(photo)}
+        {photo}
       </div>
     );
   }

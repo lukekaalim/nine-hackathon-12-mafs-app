@@ -1,7 +1,7 @@
 import kunnalImg from '../assets/users/kunaal.jpg';
 import michelleImg from '../assets/users/michelle.jpg';
 
-import { LOG_USER_IN } from '../actions/users';
+import { LOG_USER_IN, UPDATE_USER } from '../actions/users';
 
 const initalState = {
   isLoggedIn: false,
@@ -21,7 +21,7 @@ const initalState = {
     },
     1: {
       image: michelleImg,
-      firstName: 'michelle',
+      firstName: 'Michelle',
       distance: 0,
       lastName: '',
       age: '21',
@@ -51,6 +51,17 @@ const reduceUsers = (state = initalState, action) => {
             bio: 'bio placeholder....',
           }
         }
+      }
+    case UPDATE_USER:
+      return {
+        ...state,
+        allUsers: {
+          ...state.allUsers,
+          [action.userId]: {
+            ...state.allUsers[action.userId],
+            ...action.updatedValues,
+          },
+        },
       }
     default:
       return state;
