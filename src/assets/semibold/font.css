@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'ProximaNovaSoft-Semibold';
+  src: url('ProximaNovaSoft-Semibold.eot');
+  src: url('ProximaNovaSoft-Semibold.woff2') format('woff2'),
+       url('ProximaNovaSoft-Semibold.woff') format('woff'),
+       url('ProximaNovaSoft-Semibold.ttf') format('truetype'),
+       url('ProximaNovaSoft-Semibold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

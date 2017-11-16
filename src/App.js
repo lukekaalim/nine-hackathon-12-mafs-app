@@ -8,6 +8,13 @@ import Views from './views';
 const store = createStore(reducer);
 
 class App extends Component {
+  componentDidMount() {
+    const splash = document.getElementById('splashImage');
+    if (splash) {
+      splash.className = 'loaded';
+    }
+  }
+
   render() {
     return (
       <Provider store={store}>

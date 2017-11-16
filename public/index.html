@@ -10,6 +10,21 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <style>
+      #splashImage {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 1;
+      }
+      #splashImage.loaded {
+        transition: opacity 0.5s 1s;
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -25,6 +40,7 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <img id="splashImage" src="%PUBLIC_URL%/splash.png" alt="Loading">
     <div id="root"></div>
     <!--
       This HTML file is a template.

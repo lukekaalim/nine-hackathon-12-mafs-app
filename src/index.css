@@ -1,5 +1,30 @@
+@font-face {
+  font-family: proxima;
+  src: url('./assets/semibold/ProximaNovaSoft-Semibold.eot');
+  src: url('./assets/semibold/ProximaNovaSoft-Semibold.woff2') format('woff2'),
+       url('./assets/semibold/ProximaNovaSoft-Semibold.woff') format('woff'),
+       url('./assets/semibold/ProximaNovaSoft-Semibold.ttf') format('truetype'),
+       url('./assets/semibold/ProximaNovaSoft-Semibold.eot?#iefix') format('embedded-opentype');
+  font-weight: semibold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: proxima;
+  src: url('./assets/regular/ProximaNovaSoft-Regular.eot');
+  src: url('./assets/regular/ProximaNovaSoft-Regular.woff2') format('woff2'),
+       url('./assets/regular/ProximaNovaSoft-Regular.woff') format('woff'),
+       url('./assets/regular/ProximaNovaSoft-Regular.ttf') format('truetype'),
+       url('./assets/regular/ProximaNovaSoft-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: proxima;
+  font-weight: 300;
+  overflow: hidden;
 }
