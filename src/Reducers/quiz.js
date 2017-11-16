@@ -13,16 +13,16 @@ const questions = [
   {
     id: 1,
     icon: CareerImg,
-    prompt: 'Would you relocate for love',
+    prompt: 'What comes first?',
+    answers: [
+      'Love',
+      'Career',
+    ],
   },
   {
     id: 2,
     icon: HouseImg,
-    prompt: 'Do you like Dogs',
-    answers: [
-      'small ones',
-      'big ones',
-    ],
+    prompt: 'Would you relocate for love?',
   },
 ];
 

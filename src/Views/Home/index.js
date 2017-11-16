@@ -18,7 +18,7 @@ const mapDispachToProps = (dispatch) => ({
 
 const Home = ({ goToQuiz, goToLogin, goToBroken, goToProfile }) => (
   <div>
-    <h2> Welcome Home </h2>
+    <h2> Testing Zone </h2>
     <button className='loginButton viewButton' onClick={goToLogin}>Go to the Login</button>
     <button className='quizButton viewButton' onClick={goToQuiz}>Go to the Quiz</button>
     <button className='viewButton' onClick={goToProfile}>Go to Your Profile</button>

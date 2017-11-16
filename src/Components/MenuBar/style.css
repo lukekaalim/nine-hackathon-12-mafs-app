@@ -1,0 +1,13 @@
+.menuBarButton {
+  border: 0;
+  background: none;
+}
+
+.menuBarRoot {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  height: 100%;
+  width: 75%;
+  justify-content: space-around;
+}

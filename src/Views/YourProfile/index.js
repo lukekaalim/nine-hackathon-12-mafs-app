@@ -6,6 +6,7 @@ import { resetAnswers } from '../../actions/quiz';
 import MenuBar from '../../components/MenuBar';
 import Button from '../../components/Button/StandardRed';
 import GreyCurvedLayout from '../../layouts/GreyCurvedLayout';
+import HeadedLayout from '../../layouts/HeadedLayout';
 
 import './style.css';
 
@@ -22,24 +23,30 @@ const mapDispachToProps = (dispatch) => ({
 
 const YourProfile = ({ yourProfile, goToQuiz }) => (
   <div className="profileRoot">
-    <GreyCurvedLayout
+    <HeadedLayout
       header={<MenuBar />}
-      primaryContent={
-        <div>
-          <div className="profileImageContainer">
-            <div className="profileImage" style={{backgroundImage: `url(${yourProfile.image})`}}></div>
+      content={
+        <GreyCurvedLayout
+        primaryContent={
+          <div className="yourProfilePrimary">
+            <div className="yourProfileImageContainer">
+              <img className="yourProfileImage" src={yourProfile.image} alt="tjing" />
+            </div>
+            <h1 className="yourProfileName">
+              {`${yourProfile.firstName}, ${yourProfile.age}`}
+            </h1>
           </div>
-          {`${yourProfile.firstName}, ${yourProfile.age}`}
-        </div>
+        }
+        secondaryContent={
+          <div className="yourProfileSecondary">
+            <h2>Your profile</h2>
+            <p>{yourProfile.bio}</p>
+            <Button className="yourProfileFindLove" onClick={goToQuiz}>Find Love</Button>
+          </div>
+        }
+        />
       }
-      secondaryContent={
-        <div>
-          <h2>Your Profile</h2>
-          <p>{yourProfile.bio}</p>
-          <Button onClick={goToQuiz}>Find Love</Button>
-        </div>
-      }
-      />
+    />
   </div>
 );
 

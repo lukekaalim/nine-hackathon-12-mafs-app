@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import cx from 'classnames';
+
+import './style.css';
 
 import { setView } from '../../actions/view';
 
@@ -28,17 +29,17 @@ const mapDispachToProps = (dispatch) => ({
 });
 
 const MenuBar = ({ currentView, goToProfile, goToHeart, goToVideo, goToChat }) => (
-  <nav>
-    <button onClick={goToProfile}>
+  <nav className='menuBarRoot'>
+    <button className='menuBarButton' onClick={goToProfile}>
       <img src={currentView === 'yourprofile' ? profileActiveImg : profileImg} alt="profile" />
     </button>
-    <button onClick={goToHeart}>
+    <button className='menuBarButton' onClick={goToHeart}>
       <img src={currentView === 'heart' ? heartActiveImg : heartImg} alt="heart" />
     </button>
-    <button onClick={goToVideo}>
+    <button className='menuBarButton' onClick={goToVideo}>
       <img src={currentView === 'video' ? videoActiveImg : videoImg} alt="video" />
     </button>
-    <button onClick={goToChat}>
+    <button className='menuBarButton' onClick={goToChat}>
       <img src={currentView === 'chat' ? chatActiveImg : chatImg} alt="chat" />
     </button>
   </nav>

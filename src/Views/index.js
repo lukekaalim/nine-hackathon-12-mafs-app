@@ -2,6 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux'
 
 import Home from './Home';
+import Heart from './Heart';
+import Video from './Video';
+import Chat from './Chat';
 import Unknown from './Unknown';
 import Quiz from './Quiz';
 import YourProfile from './YourProfile';
@@ -17,7 +20,13 @@ const Views = ({ currentView }) => {
     case 'home':
       return <Home />;
     case 'yourprofile':
-      return <YourProfile />
+      return <YourProfile />;
+    case 'heart':
+      return <Heart />;
+    case 'video':
+      return <Video />;
+    case 'chat':
+      return <Chat />;
     case 'quiz':
       return <Quiz />;
   }

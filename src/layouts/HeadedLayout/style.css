@@ -1,0 +1,16 @@
+.headedLayoutHeader {
+  flex: 0 0 80px;
+  width: 100%;
+}
+.headedLayoutRoot {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  position: absolute;
+}
+
+.headedLayoutContent {
+  position: relative;
+  flex: 1;
+}
