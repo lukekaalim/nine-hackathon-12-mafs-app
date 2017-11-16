@@ -1,4 +1,4 @@
-import { SET_VIEW } from '../Actions/View';
+import { SET_VIEW } from '../actions/view';
 
 const initalState = {
   currentView: 'home',
