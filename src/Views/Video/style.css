@@ -1,0 +1,28 @@
+.videoRoot {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.videoExpert {
+  flex: 1;
+}
+
+.videoSummary {
+  flex: 1;
+  text-align: center;
+  margin: 0px 25px;
+}
+.videoSummaryTitle {
+  color: #ED3F45;
+  font-weight: bold;
+}
+.videoSummaryTip {
+  font-size: 20px;
+}
+.videoSummarySkip {
+  padding: 5px 25px;
+  width: auto;
+}

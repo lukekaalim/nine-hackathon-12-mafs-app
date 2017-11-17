@@ -34,6 +34,7 @@ const Login = ({ isLoggedIn, onLogInSuccess, goToLoginPage }) => (
       cssClass="loginFacebookButton"
       fields="first_name,last_name,email,picture,age_range"
       callback={onLogInSuccess}
+      onFailure={console.log}
       textButton="Sign up with Facebook"
     />
     <div className="loginSeperator">Or</div>

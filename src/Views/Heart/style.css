@@ -29,14 +29,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-}
-
-.heartControlCancel {
-  background-color: #ED3F45;
-}
-
-.heartControlCommit {
-  background-color: #4BCB91;
+  background: none;
 }
 
 .heartControlSummaryContainer {

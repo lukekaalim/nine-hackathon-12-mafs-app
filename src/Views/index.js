@@ -19,14 +19,13 @@ const Views = ({ currentView }) => {
   switch(currentView) {
     default:
       return <Unknown />;
-    case 'home':
-      return <Home />;
     case 'yourprofile':
       return <YourProfile />;
     case 'committment':
       return <Committment />;
     case 'heart':
       return <Heart />;
+    case 'home':
     case 'login':
       return <Login />;
     case 'video':

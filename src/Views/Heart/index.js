@@ -3,6 +3,9 @@ import { connect } from 'react-redux'
 
 import { setView } from '../../actions/view';
 
+import yesIcon from '../../assets/icons/yes.png';
+import noIcon from '../../assets/icons/no.png';
+
 import MenuBar from '../../components/MenuBar';
 import RoundFloating from '../../components/Button/RoundFloating';
 import HeadedLayout from '../../layouts/HeadedLayout';
@@ -31,8 +34,12 @@ const Heart = ({ matchableUsers, goToCommittment }) => (
         </div>
         <div className="heartControls">
           <div className="heartControlFloatingButtons">
-            <RoundFloating className="heartControlCancel">X</RoundFloating>
-            <RoundFloating className="heartControlCommit" onClick={goToCommittment}>{'<#3'}</RoundFloating>
+            <RoundFloating className="heartControlCancel">
+              <img src={noIcon} />
+            </RoundFloating>
+            <RoundFloating className="heartControlCommit" onClick={goToCommittment}>
+              <img src={yesIcon} />
+            </RoundFloating>
           </div>
           <div className="heartControlSummaryContainer">
             <h1 className="heartControlSummaryMatchRate"> 85% Match Rate </h1>

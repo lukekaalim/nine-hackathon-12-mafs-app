@@ -6,8 +6,10 @@ const initalState = {
     0: {
       userId: 1,
       content: [
-        {author: 0, text: 'Textual content', time: 0},
-        {author: 1, text: 'XD'},
+        {author: 0, text: 'i like stuff', time: 0},
+        {author: 1, text: 'i like stuff too', time: 1},
+        {author: 0, text: 'We have so much in common!', time: 0},
+        {author: 0, text: 'Hello?', time: 0},
       ],
     },
   },
